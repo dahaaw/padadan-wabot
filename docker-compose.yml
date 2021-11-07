@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:  
+  padadan-db:
+    container_name: padadan-db  
+    image: mysql
+    ports:
+      - 3306:3306
+    networks:
+      - padadan-network    
+    environment:
+      MYSQL_ROOT_PASSWORD: padadan
+    # volumes:
+    # - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+    
+  padadan-pma:    
+    image: phpmyadmin
+    container_name: padadan-pma    
+    networks:
+      - padadan-network        
+    ports:
+      - "8080:80"    
+    environment:
+      PMA_HOST: padadan-db    
+    depends_on:
+      - padadan-db
+
+networks:
+  padadan-network:
