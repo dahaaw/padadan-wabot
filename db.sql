@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: padadan-db
--- Waktu pembuatan: 07 Nov 2021 pada 12.05
+-- Waktu pembuatan: 07 Nov 2021 pada 22.42
 -- Versi server: 8.0.26
 -- Versi PHP: 7.4.24
 
@@ -47,7 +47,22 @@ CREATE TABLE `_chat_history` (
 INSERT INTO `_chat_history` (`id`, `user`, `session`, `data`, `serverMessage`, `userMessage`, `createdAt`, `updatedAt`) VALUES
 (1, 2, NULL, '[]', NULL, 'a', '2021-11-07 08:00:07', '2021-11-07 08:00:07'),
 (2, 2, NULL, '[]', 'Selamat datang di warung\n    1. Lihat daftar kategori\n    2. Lihat keranjang belanja\n    3. Ubah profil\n    ', 'a', '2021-11-07 10:55:22', '2021-11-07 10:55:22'),
-(3, 2, NULL, '[]', 'Selamat datang di warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', 'a', '2021-11-07 10:56:42', '2021-11-07 10:56:42');
+(3, 2, NULL, '[]', 'Selamat datang di warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', 'a', '2021-11-07 10:56:42', '2021-11-07 10:56:42'),
+(4, 2, NULL, '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', 'a', '2021-11-07 22:10:47', '2021-11-07 22:10:47'),
+(5, 2, NULL, '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', '1', '2021-11-07 22:10:53', '2021-11-07 22:10:53'),
+(6, 2, NULL, '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', 'a', '2021-11-07 22:14:41', '2021-11-07 22:14:41'),
+(7, 2, NULL, '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', 'a', '2021-11-07 22:18:46', '2021-11-07 22:18:46'),
+(8, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', 'a', '2021-11-07 22:25:07', '2021-11-07 22:25:07'),
+(9, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', 'saya pilih 1', '2021-11-07 22:25:23', '2021-11-07 22:25:23'),
+(10, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', 'a', '2021-11-07 22:26:52', '2021-11-07 22:26:52'),
+(11, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', '1', '2021-11-07 22:26:58', '2021-11-07 22:26:58'),
+(12, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', '1', '2021-11-07 22:27:33', '2021-11-07 22:27:33'),
+(13, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', '1', '2021-11-07 22:28:11', '2021-11-07 22:28:11'),
+(14, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', '1', '2021-11-07 22:28:23', '2021-11-07 22:28:23'),
+(15, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', '1', '2021-11-07 22:28:48', '2021-11-07 22:28:48'),
+(16, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', '1', '2021-11-07 22:30:10', '2021-11-07 22:30:10'),
+(17, 2, 'home', '[]', 'Selamat datang di Warung\n1. Lihat daftar kategori\n2. Lihat keranjang belanja\n3. Ubah profil\n', '1', '2021-11-07 22:30:51', '2021-11-07 22:30:51'),
+(18, 2, 'home', '[]', 'Isi keranjang', '1', '2021-11-07 22:31:45', '2021-11-07 22:31:45');
 
 -- --------------------------------------------------------
 
@@ -135,7 +150,7 @@ CREATE TABLE `_setting` (
 --
 
 INSERT INTO `_setting` (`id`, `name`, `value`, `createdAt`, `updatedAt`) VALUES
-(1, 'wa session', '{\"WABrowserId\":\"\\\"JkvbhV06vINxcy/q8QZIzw==\\\"\",\"WASecretBundle\":\"{\\\"key\\\":\\\"08lVJ8HnFgdvSQ39MwIkg9nFKeWTHHqgPoM0IdTb+Qs=\\\",\\\"encKey\\\":\\\"3qW1b2Yc2zHwX6nSZdSGozacso3cUREpGUnzAEMsKs4=\\\",\\\"macKey\\\":\\\"08lVJ8HnFgdvSQ39MwIkg9nFKeWTHHqgPoM0IdTb+Qs=\\\"}\",\"WAToken1\":\"\\\"Jk+iKk75+T/G0pQTjuTGAoshYMnEv+GmV2XgSC2jUjU=\\\"\",\"WAToken2\":\"\\\"1@FPNfmGSDe6MPpL10hWVvyyh3LWZ+wmnSlZ62nuAgKqRuanhWQWq+4CqUyRwimIzg2CsLkFv9l38d3w==\\\"\"}', '2021-11-06 08:52:03', '2021-11-07 10:57:30');
+(1, 'wa session', '{\"WABrowserId\":\"\\\"JkvbhV06vINxcy/q8QZIzw==\\\"\",\"WASecretBundle\":\"{\\\"key\\\":\\\"08lVJ8HnFgdvSQ39MwIkg9nFKeWTHHqgPoM0IdTb+Qs=\\\",\\\"encKey\\\":\\\"3qW1b2Yc2zHwX6nSZdSGozacso3cUREpGUnzAEMsKs4=\\\",\\\"macKey\\\":\\\"08lVJ8HnFgdvSQ39MwIkg9nFKeWTHHqgPoM0IdTb+Qs=\\\"}\",\"WAToken1\":\"\\\"A3wm0xV6T07NT+tr/shru1ckTnAo4RthOzzTM+QUofo=\\\"\",\"WAToken2\":\"\\\"1@1p7dRasTtrFDkysCQIeL511XK8LNWBTJHkcMG2NgYC58jDTUYjKTjWMxYshXG/Ev3nj4aEfBKZ9UFQ==\\\"\"}', '2021-11-06 08:52:03', '2021-11-07 22:32:52');
 
 -- --------------------------------------------------------
 
@@ -234,7 +249,7 @@ ALTER TABLE `_user_cart`
 -- AUTO_INCREMENT untuk tabel `_chat_history`
 --
 ALTER TABLE `_chat_history`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `_product`
