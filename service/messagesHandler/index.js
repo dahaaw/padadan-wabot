@@ -12,7 +12,7 @@ module.exports = async (client, message) => {
     
     const forReply = await CONDITIONS(user, message, chatHistory);
 
-    client.sendMessage(message.from, forReply.message);
+    client.sendMessage(message.from, forReply.text);
         
     //  add new chat history
     _chat_history.create({ 

@@ -1,0 +1,1 @@
+exports.home = () => `Silahkan ketikkan nama barang atau kategori barang yang kamu cari`;

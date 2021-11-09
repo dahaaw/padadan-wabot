@@ -10,8 +10,8 @@ services:
       - padadan-network    
     environment:
       MYSQL_ROOT_PASSWORD: padadan
-    # volumes:
-    # - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+    volumes:
+    - ./db.sql:/docker-entrypoint-initdb.d/db.sql
     
   padadan-pma:    
     image: phpmyadmin
