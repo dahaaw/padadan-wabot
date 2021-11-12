@@ -20,7 +20,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     tag: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.JSON,
       allowNull: false
     }
   }, {
