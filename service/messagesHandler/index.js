@@ -19,7 +19,7 @@ module.exports = async (client, message) => {
         user,
         session: forReply.session,
         data: forReply.data, 
-        serverMessage: forReply.message, 
+        serverMessage: forReply.text, 
         userMessage: message.body 
     });   
 }
