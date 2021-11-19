@@ -26,6 +26,8 @@ module.exports = async (user, message, chatHistory) => {
 
     }
 
+    // HOME -> CARI -> RESULT
+    if(chatHistory.session === 'search') hasil = {...hasil, ... await CARI.result(message.body) };
 
 
     return hasil;
